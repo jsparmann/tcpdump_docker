@@ -9,6 +9,7 @@
   
 ```console
 $ docker run -p 8086:8086 \
+      --net=host \
       -v /data:/data \
       -e interface=enp2s0 \
       -e filesize=1 \
