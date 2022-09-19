@@ -8,7 +8,7 @@
 -	`store`: where and what are the name of the pcap files to store 
   
 ```console
-$ docker run -p 8086:8086 \
+$ docker run \
       --net=host \
       -v /data:/data \
       -e interface=enp2s0 \
